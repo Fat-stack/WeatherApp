@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.WeatherActivity">
+
+
+<TextView
+    android:id="@+id/tvCity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/btnDeleteItem"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="40dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:textSize="40sp"
+    android:textAlignment="center"
+    />
+
+<TextView
+    android:id="@+id/tvDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvCity"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:textSize="20sp"
+    />
+
+<TextView
+    android:id="@+id/tvTemperature"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:textSize="20sp"
+    />
+
+<TextView
+    android:id="@+id/tvWind"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvTemperature"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:textSize="20sp"
+    />
+
+<TextView
+    android:id="@+id/tvForecast"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvWind"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:textSize="20sp"
+    />
+
+<Button
+    android:id="@+id/btnBack"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/go_back"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginBottom="40dp"
+
+    android:layout_marginEnd="20dp"
+    />
+
+
+
+    <ImageButton
+        android:id="@+id/btnAddToFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_action_favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_action_notfavorite"
+
+        app:layout_constraintEnd_toStartOf="@id/btnAddToFavorites"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="45dp"
+
+        android:layout_marginEnd="2dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

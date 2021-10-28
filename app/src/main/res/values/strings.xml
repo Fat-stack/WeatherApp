@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather4U2</string>
+    <string name="weather_4_u">Weather 4 U</string>
+    <string name="check_weather_where">Check weather where?</string>
+    <string name="check_wxr">Check Weather</string>
+    <string name="go_back">Go Back</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="favoriteslabel">Favorites</string>
+</resources>
